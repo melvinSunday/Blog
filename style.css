@@ -12,6 +12,7 @@
     --primary-color: #ffff;
     --secondary-color: #676767;
     --content-wrap-color: black;
+    --dropdown-color:rgb(42, 39, 29);
     --forSix-color:#464646;
     --connect-color:#1f12033b;
     --heading-color: #000000;
@@ -27,6 +28,7 @@
     --primary-color: #0a0a0a;
     --secondary-color: #F2EAD3;
     --heading-color: #F2EAD3;
+    --dropdown-color:#F2EAD3;
     --content-wrap-color: #F2EAD3;;
     --forSix-color:#F2EAD3;;
     --connect-color:#ebe4dcc1;
@@ -60,6 +62,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    background-color: #2d291f;
     z-index: 100;
     transition: background-color 0.5s ease;
 }
@@ -77,9 +80,10 @@ body {
 }
 
 .header.scrolled {
-    background-color: #2d291f;
+
     box-shadow: 3px 3px 3px rgba(86, 83, 83, 0.13);
 }
+
 
 
 
@@ -146,7 +150,7 @@ font-style: italic;
 }
 
 
-#icon {
+#icon1 {
     width: 45px;
     cursor: pointer;
     box-shadow: 10px 5px 5px rgba(78, 75, 75, 0.34);
@@ -212,7 +216,7 @@ font-weight: 1;
 }
 
 .Introduction {
-    background: url('images/withCam.jpg') no-repeat center center fixed;
+    background: url('images/withCam2.png') no-repeat center center fixed;
     background-size: cover;
     width: 100vw;
     padding-top: 10%;
@@ -264,7 +268,6 @@ font-weight: 1;
     justify-content: center;
     align-items: center;
     text-align: left;
-
     padding-bottom: 20px;
 }
 
@@ -404,6 +407,7 @@ font-weight: 1;
     transition: transform 0.3s ease;
     transition: all 0.4s linear;
     cursor: pointer;
+
 }
 
 .box3:hover img {
@@ -454,7 +458,7 @@ height: fit-content;
 
 .box4 p:nth-child(3) {
 margin-top: 150px;
-max-width: 33%;
+width: 33%;
 
 
 }
@@ -568,6 +572,7 @@ letter-spacing: 5px;
 
 .intro p {
     font-size: 2rem;
+    max-width: 100%;
     width: 50%;
     margin-left: 3%;
     margin-top: 4%;
@@ -769,6 +774,12 @@ letter-spacing: 5px;
 }
 
 
+.MyPhilosophy-container p img{
+    width: 60%;
+    display: none;
+   object-fit: contain;
+}
+
 .MyPhilosophy-container img {
     width: 60%;
    object-fit: contain;
@@ -847,7 +858,9 @@ letter-spacing: 5px;
     padding-right: 10px;
     line-height: 40px;
     font-weight: 1;
-    width: 70%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
     letter-spacing: 4px;
 }
 
@@ -887,17 +900,22 @@ letter-spacing: 5px;
 width: 40%;
 }
 
+.finePhotog {
+    display: flex;
+    width: 55%;
+    gap: 20px;
+    justify-content: center;
 
- .WhatIDo-content img {
-    width: 25% ;
+}
+
+.finePhotog  img {
+    width: 45% ;
       height: auto; 
     object-fit: contain;
 
 }
 
-.WhatIDo .WhatIDo-content img:nth-child(3) {
-    width: 25% ;
-}
+
 
 .WhatIDo .WhatIDo-content p {
     padding: 10px;
@@ -932,101 +950,74 @@ width: 40%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.375);
 }
 
-#progressBar {
-    margin-top: 5%;
-    border-radius: 50px;
-    width: 100%;
-    height: 7px;
-    background-color: var(--primary-color);
-}
 
-#progress {
-    border-radius: 50px;
-    height: 100%;
-    width: 0;
-    background-color: #ff9100;
-}
-
-
-#playButton,
-#pauseButton {
-    margin: 0 20px;
-    cursor: pointer;
-}
-
-#cd {
-    position: relative;
-    width: 200px;
-    height: 200px;
-}
-
-#cdImage {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    animation: spin 2s linear infinite paused;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-#pauseButton {
-    display: none;
-}
 
 .header .toggle_btn {
     display: none;
 }
-
+.toggle_btn {
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+}
 /*
 responsiveeee
 */
 
-.toggle_btn img {
-    width: 25px;
-    cursor: pointer;
-}
 
 /*dropdown menu*/
 
 .dropdown_menu {
+    display: none; /* Add this line */
     position: absolute;
-    right: 11%;
-    top: 60px;
-    width: 300px;
-    height: 0;
-    display: none;
-    background: #786e6e54;
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
+    right: 0;
+    top: 90px;
+    width: 100%;
+    max-height: 0;
     overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background:#2d291f9d;
+    backdrop-filter: blur(15px);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: max-height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .dropdown_menu.open {
-    height: 280px;
+    max-height: 365px;
+    padding-bottom: 40px;
 }
 
 .dropdown_menu a {
     padding: 0.7rem;
-
+padding-top: 15px;
+padding-bottom: 15px;
 
     cursor: pointer;
     display: flex;
-    font-family: 'jost';
+    font-family: 'objectivity';
     font-size: 1.6rem;
-    color: var(--primary-color);
+    color:white;
     text-decoration: none;
     align-items: center;
-    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.192);
+    justify-content: left;
+margin-left: 30px;
+    transition: all 0.5s linear;
+
+}
+
+.dropdown_menu a span {
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s linear;
+    display: block;
+}
+
+.dropdown_menu a:hover span,
+.dropdown_menu a.active span {
+    
+   color: rgb(212, 218, 64);
 }
 
 
@@ -1045,37 +1036,10 @@ responsiveeee
         margin-top: 10px;
     }
 
-    .Introduction .me-wrap,
-    .intro {
-        margin-top: 10%;
-    }
-
-    .favpet-container img {
-        margin-top: 25%;
-    }
-
-    .favfood-container img {
-        margin-top: 25%;
-    }
+   
 }
 
-@media (max-width:1068px) {
-    .favpet-container img {
-        margin-top: 39%;
-    }
 
-    .favfood-container img {
-        margin-top: 39%;
-    }
-
-}
-
-@media (max-width:1052px) {
-    .intro {
-        margin-left: 35%
-    }
-
-}
 
 @media (max-width:1029px) {
     .header .navbar {
@@ -1084,7 +1048,31 @@ responsiveeee
 
 }
 
+@media (max-width: 947px) {
+    .connect-wrap {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .socmeds {
+        align-items: center;
+    }
+}
+
+
 @media (max-width:992px) {
+
+    .Logo {
+        margin: 0 auto;
+    }
+
+    /* .toggle_btn .fa-solid {
+        padding: 5px 30px 5px 30px;
+border-radius: 30px;
+transition: all 0.5s ease-in;
+background-color: rgba(169, 147, 87, 0.362);
+    } */
+
     .navbar {
         display: none;
     }
@@ -1094,22 +1082,291 @@ responsiveeee
         float: right;
     }
 
-    #icon {
+    #icon1 {
         display: none;
     }
 
-    .dropdown_menu #icon {
+    .dropdown_menu #icon2 {
         display: block;
-        width: 35px;
-
+        width: 37px;
+        cursor: pointer;
+margin-left: 30px;
+margin-top: 10px;
+        background-color: rgba(255, 255, 255, 0.262);
+        padding: 5px;
+        border-radius: 10px;
     }
+
 
     .dropdown_menu {
-        display: block;
+        display: block; 
+        max-height: 0;
     }
+
+    .box1 .hover-text, 
+    .box2 .hover-text,
+    .box3 .hover-text {
+        font-size: 1.5rem;
+    }
+
+    .WhatIDo-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .WhatIDo p {
+        width: 95%;
+    }
+
+    .WhatIDo-content img {
+        width:70%;
+        flex-direction: row;
+    }
+
+    .WhatIDo .WhatIDo-content img:nth-child(3) {
+        width:70% ;
+    }
+
+
+    .MyPhilosophy-container {
+        flex-direction: column;
+    }
+
+    .MyPhilosophy-container p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .MyPhilosophy-container p img {
+        display: block;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .MyPhilosophy-container img {
+        display: none;
+    }
+
+    .MyWork .boxes {
+        flex-direction: column;
+    }
+
+    .MyWork .row2 {
+        flex-direction: column;
+margin-top: 20px;
+        align-items: center;
+    }
+    
+    .MyWork .boxes img:nth-child(1),
+.MyWork .boxes img:nth-child(3) {
+    width: 70%;
+}
+
+.MyWork .boxes img:nth-child(2) {
+    width: 70%;
+
+}
+
+
+.MyWork .row2 img:nth-child(1),
+.MyWork .row2 img:nth-child(3) {
+    width: 70%;
+
+}
+
+.MyWork .row2 img:nth-child(2) {
+    width: 70%;
+    
+    object-fit: contain;
+}
+
+.MyWork .boxes:nth-of-type(3),
+.MyWork .boxes:nth-of-type(5) {
+    margin-top: 20px;
+}
 
 
 }
+
+@media (max-width:925px) {
+    .box4{
+        flex-direction: column;
+    }
+
+    .box4 p {
+        width: 100%;
+    }
+
+    .box4 p:nth-child(3) {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .box4 img {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 70%;
+    }
+}
+
+@media (max-width:959px) {
+
+    .intro {
+        margin-left: 0;
+        margin-top: 250px;
+    }
+    .intro h2 {
+        margin: 0 auto;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .intro p {
+       width: 100%;
+       padding: 20px;
+       text-align: center;
+margin-left: 0;
+    }
+
+    .intro hr {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:851px){
+    .boxes:nth-of-type(2){
+        flex-direction: column;
+
+        width: 60%;
+    }
+
+    .box1 .hover-text, 
+    .box2 .hover-text,
+    .box3 .hover-text {
+        font-size: 2.4rem;
+    }
+
+
+    .box3 img {
+        width: 100%;
+    }
+
+ 
+
+    .box3 .hover-text {
+      left: 50%;
+    }
+}
+
+@media (max-width:600px) {
+    .box4 img {
+        width: 100%;
+    }
+
+    .boxes:nth-of-type(2) {
+        width: 100%;
+    }
+
+    .box1 .hover-text, 
+    .box2 .hover-text,
+    .box3 .hover-text {
+        font-size: 2rem;
+    }
+
+    .MyWork .boxes img:nth-child(1),
+    .MyWork .boxes img:nth-child(3) {
+        width: 100%;
+    }
+    
+    .MyWork .boxes img:nth-child(2) {
+        width: 100%;
+    
+    }
+    
+    
+    .MyWork .row2 img:nth-child(1),
+    .MyWork .row2 img:nth-child(3) {
+        width: 100%;
+    
+    }
+    
+    .MyWork .row2 img:nth-child(2) {
+        width: 100%;
+        
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 598px) {
+    .extra h2 {
+            margin: 0 auto;
+        }
+
+        .extra h1{
+            width: 100%;
+        }
+
+        .extra p {
+            width: 100%;
+            margin-top: 30px;
+            margin-left: 0;
+            text-align: center;
+        }
+    .content-wrap {
+    flex-direction: column;
+}
+
+@media (max-width: 414px) {
+.intro {
+    margin-top: 130px;
+}
+}
+
+.WhatIDo h2 {
+    margin: 0 auto;
+}
+
+.finePhotog {
+    flex-direction: column;
+    width: 100%;
+}
+
+.finePhotog img {
+width: 100%;
+}
+
+.landscape {
+    flex-direction: column;
+align-items: center;
+    width: 100%;
+}
+
+.landscape img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.landscape img:nth-child(2) {
+    margin-top: 0px;
+}
+.MyPhilosophy-container p img {
+    width: 100%;
+}
+
+}
+@media (max-width:1426px) {
+
+.ig-section .ig{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+
 
 .Connect{
     background-color: var(--primary2-color);
@@ -1179,8 +1436,15 @@ color: #000;
 .form-wrap {
     display: flex;
     gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
     margin-top: 10px;
   }
+
+  .form-wrap iframe {
+    margin: 0 auto;
+    width: 100%;
+}
 
 .form-container {
     width: 45%;
@@ -1220,3 +1484,14 @@ color: #000;
 
   
   
+@media (max-width: 851px) {
+    .form-wrap {
+        flex-direction: column;
+    }
+
+    .form-container {
+width: 100%;
+        margin: 0 auto;
+    }
+}
+
