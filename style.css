@@ -53,6 +53,15 @@ width: 100%;
     z-index: 1000; 
 }
 
+#ok-button {
+    transition: all 0.5s ease;
+    padding: 7px;
+    cursor: pointer;
+    background-color: rgb(244, 236, 236);
+    border-radius: 10px;
+}
+
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;

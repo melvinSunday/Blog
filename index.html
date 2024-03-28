@@ -15,10 +15,8 @@
             const popup = document.querySelector(".popup-message");
             const okButton = document.getElementById("ok-button");
     
-
             popup.style.display = "block";
     
-            
             setTimeout(function() {
                 popup.style.opacity = 0;
                 setTimeout(function() {
@@ -26,7 +24,6 @@
                 }, 500);
             }, 4000);
     
-            
             okButton.addEventListener("click", function() {
                 popup.style.display = "none";
             });
@@ -38,6 +35,8 @@
 <body>
     <div class="popup-message">
         For the best experience, please use Google Chrome.
+        <button id="ok-button">Okay</button>
+
     </div>
     <div class="wrap">
         <header class="header">
