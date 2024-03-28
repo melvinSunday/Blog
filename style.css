@@ -40,6 +40,19 @@
     --slide-color: #897c7c62;
 }
 
+.popup-message {
+    position: fixed;
+    font-family: 'objectivity';
+    transition: all 0.5s ease;
+width: 100%;
+    background-color: #d5bd37;
+    padding: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    text-align: center;
+    z-index: 1000; 
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;

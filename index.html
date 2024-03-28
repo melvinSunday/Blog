@@ -10,9 +10,35 @@
     <title>Melvin Domingo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const popup = document.querySelector(".popup-message");
+            const okButton = document.getElementById("ok-button");
+    
+
+            popup.style.display = "block";
+    
+            
+            setTimeout(function() {
+                popup.style.opacity = 0;
+                setTimeout(function() {
+                    popup.style.display = "none";
+                }, 500);
+            }, 4000);
+    
+            
+            okButton.addEventListener("click", function() {
+                popup.style.display = "none";
+            });
+        });
+    </script>
+    
 </head>
 
 <body>
+    <div class="popup-message">
+        For the best experience, please use Google Chrome.
+    </div>
     <div class="wrap">
         <header class="header">
             <div class="wrap2">
