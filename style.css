@@ -222,34 +222,19 @@ font-weight: 1;
 
 }
 
-.me img {
-    margin-top: -30px;
-    max-width: 35%;
-    min-width: 30%;
-    box-shadow: 10px 10px 5px rgba(41, 37, 37, 0.613);
-    background-color: #eadfb424;
-    border-radius: 20px;
-    animation: move 5s linear infinite;
-    position: relative;
-    background: url('images/milkyway.jpg') no-repeat center center fixed;
 
-    z-index: 9;
-    background-size: cover;
-}
 
 .Introduction {
-    background: url('images/withCam2.png') no-repeat center center fixed;
+    background: url('images/withCam2.png') no-repeat center center scroll;
     background-size: cover;
     width: 100vw;
     padding-top: 10%;
     position: relative;
     left: 50%;
     right: 50%;
-
     margin-left: -50vw;
     margin-right: -50vw;
 }
-
 .Introduction::after {
     content: "";
     background-color: rgba(0, 0, 0, 0.603);
