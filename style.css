@@ -983,7 +983,6 @@ responsiveeee
     max-height: 0;
     overflow: hidden;
     background:#2d291f9d;
-    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
@@ -991,7 +990,6 @@ responsiveeee
     border-bottom-right-radius: 10px;
     transition: max-height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 
 .dropdown_menu.open {
     max-height: 365px;
