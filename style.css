@@ -62,11 +62,15 @@ width: 100%;
 }
 
 .VC {
-    width: 190px;
+    width: 50%;
     margin: 0 auto;
 display: flex;
 justify-content: center;
 flex-direction: column;
+}
+
+.VC > #num {
+    margin: 0 auto;
 }
 
 .VC h1 {
