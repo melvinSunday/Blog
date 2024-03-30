@@ -61,6 +61,30 @@ width: 100%;
     border-radius: 10px;
 }
 
+.VC {
+    width: 50%;
+    margin: auto;
+
+}
+
+.VC h1 {
+text-align: center;
+font-family: 'objectivity';
+font-size: 2rem;
+padding-bottom: 10px;
+padding-top: 20px;
+color: var(--forSix-color);
+}
+#visitorCounter {
+    font-size: 24px;
+    color: var(--forSix-color);
+    border: 1px solid var(--forSix-color);
+    padding: 10px;
+    margin: 10px;
+    margin: 0 auto;
+        width: 100px;
+    text-align: center;
+}
 
 html {
     font-size: 62.5%;
