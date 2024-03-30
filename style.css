@@ -62,9 +62,11 @@ width: 100%;
 }
 
 .VC {
-    width: 50%;
-    margin: auto;
-
+    width: 190px;
+    margin: 0 auto;
+display: flex;
+justify-content: center;
+flex-direction: column;
 }
 
 .VC h1 {
