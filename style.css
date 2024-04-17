@@ -603,6 +603,7 @@ hr {
     font-family: 'derivia';
 letter-spacing: 5px;
     color: white;
+
     font-weight: 1;
     text-shadow: 5px 6px 7px #000000;
 
@@ -1258,13 +1259,18 @@ margin-top: 20px;
     .intro h2 {
         margin: 0 auto;
         width: 100%;
-        padding: 15px;
+        padding: 10px;
+ max-width: 870px;
+  
+
         text-align: center;
     }
 
     .intro p {
        width: 100%;
+        max-width: 850px;
        padding: 20px;
+
        text-align: center;
 margin-left: 0;
     }
@@ -1358,9 +1364,7 @@ margin-left: 0;
 }
 
 @media (max-width: 414px) {
-.intro {
-    margin-top: 130px;
-}
+
 }
 
 .WhatIDo h2 {
@@ -1533,10 +1537,23 @@ width: 100%;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
+.intro {
+width: 100%;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        z-index: 9;
+    }
+    .intro h2 {
+font-size: 3.3rem;
+
+
+    }
+   
 .intro p{
     font-size: 1.4rem;
-
 }
 
 .extra{
@@ -1574,5 +1591,20 @@ margin-top: 20px;
 .WhatIDo .WhatIDo-content p{
     font-size: 1.4rem;
 }
+
+.ig-section {
+    width: 95vw;
+
+}
+.ig {
+
+width: 20px;
+margin: 0 auto;
+}
 }
 
+@media (max-width: 330px) {
+.ig-section{
+    display: none;
+}
+}
