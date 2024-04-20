@@ -548,8 +548,9 @@ object-fit: contain;
     font-size: 3.5rem;
     text-align: center;
     color: var(--secondary-color);
-    padding-right: 10px;
+
     line-height: 40px;
+
     font-weight: 1;
     top: 0;
     width: 50%;
